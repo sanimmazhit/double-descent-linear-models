@@ -24,14 +24,52 @@ using NumPy.
 7. Validation-based Ridge regularization
 8. Final comparison and results analysis
 
+
 ## Project Structure
 
-- `src/` - Regression algorithms and data generation
-- `notebooks/01_synthetic_experiments.ipynb` - Synthetic experiments
-- `notebooks/02_real_world_experiments.ipynb` - California Housing experiments
-- `notebooks/03_results_analysis.ipynb` - Final analysis
-- `results/` - Experimental graphs and CSV files
-- `requirements.txt` - Python dependencies
+```text
+double-descent-linear-models/
+│
+├── src/
+│   ├── data_generation.py          # Synthetic data generation
+│   └── linear_models.py            # Least Squares and Ridge Regression
+│
+├── notebooks/
+│   ├── 01_synthetic_experiments.ipynb
+│   ├── 02_real_world_experiments.ipynb
+│   └── 03_results_analysis.ipynb
+│
+├── results/
+│   ├── synthetic_double_descent.png
+│   ├── synthetic_ridge_comparison.png
+│   ├── synthetic_repeated_experiments.png
+│   ├── synthetic_noise_effect.png
+│   ├── california_double_descent.png
+│   ├── california_regularization_comparison.png
+│   ├── california_ridge_tuning.png
+│   ├── final_dataset_comparison.png
+│   ├── synthetic_results.csv
+│   ├── real_world_results.csv
+│   └── final_summary.csv
+│
+├── report/
+│   ├── main.tex
+│   └── main.pdf
+│
+├── requirements.txt
+├── README.md
+└── .gitignore
+```
+
+### Folder Descriptions
+
+- **`src/`** — Custom implementations of the regression algorithms and synthetic data generators.
+- **`notebooks/`** — Three Jupyter notebooks covering synthetic experiments, real-world experiments, and final results analysis.
+- **`results/`** — Generated figures and CSV files containing experimental results.
+- **`report/`** — LaTeX source and compiled PDF of the academic report.
+- **`requirements.txt`** — Python packages and versions required to reproduce the experiments.
+- **`README.md`** — Project overview, setup instructions, and experiment documentation.
+
 
 ## Installation
 
@@ -58,6 +96,22 @@ in the following order:
 3. `03_results_analysis.ipynb`
 
 Results and visualizations are saved in the `results/` folder.
+
+## Project Report
+
+The academic report is available in the `report/` folder.
+
+The report includes:
+- Introduction and theoretical background
+- Experimental methodology
+- Synthetic and real-world results
+- Comparison of Least Squares and Ridge Regression
+- Discussion, limitations, and conclusion
+- References and academic integrity declaration
+
+The report is written in LaTeX, and the PDF version
+can be opened directly from GitHub.
+
 
 ## Reference
 
