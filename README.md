@@ -71,19 +71,6 @@ double-descent-linear-models/
 - **`README.md`** — Project overview, setup instructions, and experiment documentation.
 
 
-## Installation
-
-Python 3.9 is recommended.
-
-Create and activate a virtual environment:
-
-    python3 -m venv .venv
-    source .venv/bin/activate
-
-Install the required packages:
-
-    python -m pip install -r requirements.txt
-
 ## Running the Experiments
 
 Open the notebooks in VS Code or Jupyter.
